@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Address Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h2>IP Address Tracker</h2>
+        <div class="input">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search for any IP Address"
+            onkeydown="checking()"
+            autocomplete="off"
+            autofocus
+          />
+          <button onclick="getIpLocation()">
+            <img src="icon-arrow.svg" alt="arrow" />
+          </button>
+        </div>
+        <p class="personal">CHECK MY IP ADDRESS</p>
+      </div>
+      <div class="middle">
+        <p class="close">Close to view map</p>
+        <div>
+          <h4>IP ADDRESS</h4>
+          <h2 class="ip">192.111111</h2>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>LOCATION</h4>
+          <h2 class="location">United States</h2>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>TIMEZONE</h4>
+          <h2 class="timezone">+1gmt</h2>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h4>ISP</h4>
+          <h2 class="isp">Okay</h2>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
