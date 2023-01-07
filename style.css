@@ -64,7 +64,7 @@ body {
 
 .input button {
   background-color: var(--VeryDarkGray);
-  height: 100%;
+  height: 50px;
   cursor: pointer;
   width: 70px;
   border: none;
