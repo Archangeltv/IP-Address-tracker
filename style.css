@@ -62,7 +62,7 @@ body {
   font-weight: 500;
 }
 
-.input button {
+.input button.butt {
   background-color: var(--VeryDarkGray);
   height: 50px;
   cursor: pointer;
@@ -157,7 +157,7 @@ body {
     color: #fefefe;
     cursor: pointer;
     font-weight: 500;
-        font-size: 14px;
+    font-size: 14px;
     text-align: center;
   }
   .middle.tiny {
